@@ -129,7 +129,6 @@ export default function SplashScreen() {
                             { translateX: moveLogo.x },
                             { translateY: moveLogo.y },
                             { scale: scaleLogo },
-
                         ]
                     }}></Animated.Image>
 

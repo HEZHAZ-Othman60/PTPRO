@@ -1,16 +1,12 @@
 import React from 'react';
 import { Text, View, TouchableOpacity, Image, StyleSheet, Button, ScrollView } from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
-
 // import { useNavigation } from "@react-navigation/native";
 
-const HomeScreen = ({ navigation }) => {
+const Drinks = () => {
 	return (
 		<ScrollView style={styles.body}>
-			<Text style={{ color: 'white', textAlign: 'center', fontSize: 20 }} >NewAwaitOrder.com</Text>
 			<Text style={{ color: '#05ad91', fontWeight: 'bold', fontSize: 35, textAlign: 'center', marginVertical: 10 }}>Le restaurant</Text>
-			<Image style={styles.homeLogo} source={require('../assets/LogoAppli.png')} />
 			<Text style={{ color: 'white', fontSize: 25, fontWeight: 'bold', textAlign: 'center', marginBottom: 25 }}
 			>Pour consulter le menu...
 				<MaterialCommunityIcons
@@ -23,7 +19,7 @@ const HomeScreen = ({ navigation }) => {
 
 
 			<Button title="Cliquez ici !"
-				onPress={() => navigation.navigate('Menu')}
+				onPress={() => navigation.navigate('DishesDesserts')}
 				color="#05ad91"
 			><MaterialCommunityIcons name="silverware-fork-knife" size={24} color="black" /></Button>
 		</ScrollView>
@@ -32,7 +28,7 @@ const HomeScreen = ({ navigation }) => {
 
 const styles = StyleSheet.create({
 	body: {
-		backgroundColor: '#143620',
+		backgroundColor: 'purple',
 	},
 
 	homeLogo: {
@@ -43,4 +39,4 @@ const styles = StyleSheet.create({
 		borderRadius: 200,
 	},
 });
-export default HomeScreen;
+export default Drinks;
